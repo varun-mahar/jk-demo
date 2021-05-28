@@ -1,0 +1,41 @@
+//choices for the alternative php                         //ssh-ket 
+                                                            $ cat ~/.ssh/id_rsa.pub
+
+  $ sudo update-alternatives --config php                                                  
+                                                           //check .env file out put 
+----------- Disable PHP Version -----------                php artisan tinker 
+$ sudo a2dismod php5.6                                
+$ sudo a2dismod php7.0                                  // Manually Copy Your Public Key
+$ sudo a2dismod php7.1                                  
+$ sudo a2dismod php7.2                                   * on that server which u want to acess   
+$ sudo a2dismod php7.3
+$ sudo a2dismod php7.4                                    $ cd ~/.ssh                       
+$ sudo a2dismod php8.0                                    $vim ~/.ssh/authorized_keys
+                                                          (past the kye here)            
+----------- Enable PHP Version -------       $chmod 700 ~/.ssh && chmod 600 ~/.ssh/authorized_keys
+$ sudo a2enmod php5.6
+$ sudo a2enmod php7.1                                 //migrate 
+$ sudo a2enmod php7.2                                  $php artisan migrate
+$ sudo a2enmod php7.3
+$ sudo a2enmod php7.4
+$ sudo a2enmod php8.0                                 //seed the amoutn                    
+                   
+                                                      $ php artisan db:seed                         
+----------- Restart Apache Server -----------         
+$ sudo systemctl restart apache2                                                  
+
+//node version                                         //adduser with home dir
+                                                        sudo useradd -m -d /opt/username username
+$ nvm ls-remote                                         sudo passwd username  
+
+$ nvm install 8.9.4                                     // ubanut vesion ----- lsb_release -a
+
+$ nvm use 8.9.4
+
+$ nvm alias default 8.9.4                             // jump server
+                                                       ssh varunmahar@65.0.222.176 
+$ nvm use default
+  
+$ node -v
+
+
